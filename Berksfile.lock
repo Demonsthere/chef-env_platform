@@ -1,0 +1,13 @@
+DEPENDENCIES
+  env_platform
+    path: .
+    metadata: true
+  platform_apache
+    path: ../chef-platform_apache
+
+GRAPH
+  apache2 (3.1.0)
+  env_platform (0.1.0)
+    platform_apache (= 0.1.0)
+  platform_apache (0.1.0)
+    apache2 (>= 0.0.0)
