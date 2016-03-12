@@ -6,4 +6,5 @@ description 'Installs/Configures chef-env_platform'
 long_description 'Installs/Configures chef-env_platform'
 version '0.1.0'
 
-depends 'platform_apache', '=0.1.0'
+depends 'platform_apache'
+depends 'platform_jenkins'
