@@ -29,3 +29,10 @@ suites:
       network:
         - [ 'forwarded_port', { guest: 9080, host: 4290 } ]
         - [ 'private_network', { ip: '192.168.42.200' } ]
+  - name: slave
+    run_list:
+      - recipe[env_platform::slave]
+    attributes:
+    driver:
+      network:
+        - [ 'private_network', { ip: '192.168.42.210' } ]
