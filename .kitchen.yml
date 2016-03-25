@@ -1,6 +1,9 @@
 ---
 driver:
   name: vagrant
+  customize:
+    nictype1: 'virtio'
+    nictype2: 'virtio'
 
 provisioner:
   name: chef_zero

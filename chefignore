@@ -72,8 +72,8 @@ Procfile
 
 # Berkshelf #
 #############
-Berksfile
-Berksfile.lock
+#Berksfile
+#Berksfile.lock
 cookbooks/*
 tmp
 
