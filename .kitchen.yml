@@ -20,7 +20,7 @@ suites:
     attributes:
     driver:
       network:
-        - [ 'forwarded_port', { guest: 80, host: 4280 } ]
+        - [ 'forwarded_port', { guest: 4280, host: 4280 } ]
         - [ 'private_network', { ip: '192.168.42.100' } ]
       synced_folders:
         - ["data/", "/var/www/html/data"]
