@@ -1,7 +1,7 @@
 source 'https://supermarket.chef.io'
-cookbook 'platform_apache', path: '~/gitHub/chef-platform_apache'
-cookbook 'platform_jenkins', path: '~/gitHub/chef-platform_jenkins'
-cookbook 'platform_base', path: '~/gitHub/chef-platform_base'
-cookbook 'platform_qemu', path: '~/gitHub/chef-platform_qemu'
+cookbook 'platform_apache', git: 'git@github.com:Demonsthere/chef-platform_apache.git'
+cookbook 'platform_jenkins', git: 'git@github.com:Demonsthere/chef-platform_jenkins.git'
+cookbook 'platform_base', git: 'git@github.com:Demonsthere/chef-platform_base.git'
+cookbook 'platform_qemu', git: 'git@github.com:Demonsthere/chef-platform_qemu.git'
 
 metadata

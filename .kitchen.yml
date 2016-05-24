@@ -21,7 +21,7 @@ suites:
     driver:
       network:
         - [ 'forwarded_port', { guest: 4280, host: 4280 } ]
-        - [ 'private_network', { ip: '192.168.42.100' } ]
+        - [ 'private_network', { ip: '192.168.24.100' } ]
       synced_folders:
         - ["data/", "/var/www/html/data"]
   - name: master
@@ -31,11 +31,11 @@ suites:
     driver:
       network:
         - [ 'forwarded_port', { guest: 9080, host: 4290 } ]
-        - [ 'private_network', { ip: '192.168.42.200' } ]
+        - [ 'private_network', { ip: '192.168.24.200' } ]
   - name: slave
     run_list:
       - recipe[env_platform::slave]
     attributes:
     driver:
       network:
-        - [ 'private_network', { ip: '192.168.42.210' } ]
+        - [ 'private_network', { ip: '192.168.24.210' } ]
