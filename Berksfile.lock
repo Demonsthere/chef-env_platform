@@ -10,7 +10,7 @@ DEPENDENCIES
     revision: babd3be9f9476ca9bda2a6b8dacfb047c990c538
   platform_jenkins
     git: git@github.com:Demonsthere/chef-platform_jenkins.git
-    revision: 95367a3379a8e86ccce213525eb910b363594810
+    revision: 6b28b2eff06a3ca383febc62f7e67f8c3ba3d38d
   platform_qemu
     git: git@github.com:Demonsthere/chef-platform_qemu.git
     revision: 8c11a50cc7a9e720b6e523f23f38de9e9003b217
@@ -28,7 +28,7 @@ GRAPH
   chef_handler (1.4.0)
   compat_resource (12.10.4)
   dmg (2.4.0)
-  env_platform (0.1.2)
+  env_platform (0.1.4)
     platform_apache (>= 0.0.0)
     platform_jenkins (>= 0.0.0)
     platform_qemu (>= 0.0.0)
@@ -40,7 +40,7 @@ GRAPH
   mingw (1.0.0)
     compat_resource (>= 0.0.0)
     seven_zip (>= 0.0.0)
-  ohai (4.0.2)
+  ohai (4.1.0)
     compat_resource (>= 12.9.0)
   platform_apache (0.1.8)
     apache2 (>= 0.0.0)
@@ -48,13 +48,13 @@ GRAPH
     apt (>= 0.0.0)
     git (>= 0.0.0)
     ohai (>= 0.0.0)
-  platform_jenkins (0.2.2)
+  platform_jenkins (0.2.4)
     ark (>= 0.0.0)
     platform_base (>= 0.0.0)
   platform_qemu (0.1.8)
-  seven_zip (2.0.0)
+  seven_zip (2.0.1)
     windows (>= 1.2.2)
-  windows (1.41.0)
+  windows (1.42.0)
     chef_handler (>= 0.0.0)
   yum (3.10.0)
   yum-epel (0.7.0)
