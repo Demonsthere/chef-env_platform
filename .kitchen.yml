@@ -4,6 +4,7 @@ driver:
   customize:
     nictype1: 'virtio'
     nictype2: 'virtio'
+    nictype3: 'virtio'
 
 provisioner:
   name: chef_zero
@@ -32,6 +33,7 @@ suites:
       network:
         - [ 'forwarded_port', { guest: 9080, host: 4290 } ]
         - [ 'private_network', { ip: '192.168.24.200' } ]
+        - [ 'public_network' , { ip: '192.168.42.142', bridge: "en0: Wi-Fi (AirPort)" } ]
   - name: slave
     run_list:
       - recipe[env_platform::slave]

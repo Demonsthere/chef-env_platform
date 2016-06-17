@@ -2,33 +2,23 @@ DEPENDENCIES
   env_platform
     path: .
     metadata: true
-  platform_apache
-    git: git@github.com:Demonsthere/chef-platform_apache.git
-    revision: a8c9a5d497f54c24d8bae2c921f764e4629b2a0a
-  platform_base
-    git: git@github.com:Demonsthere/chef-platform_base.git
-    revision: babd3be9f9476ca9bda2a6b8dacfb047c990c538
-  platform_jenkins
-    git: git@github.com:Demonsthere/chef-platform_jenkins.git
-    revision: 6b28b2eff06a3ca383febc62f7e67f8c3ba3d38d
-  platform_qemu
-    git: git@github.com:Demonsthere/chef-platform_qemu.git
-    revision: 8c11a50cc7a9e720b6e523f23f38de9e9003b217
 
 GRAPH
   apache2 (3.2.2)
-  apt (3.0.0)
+  apt (4.0.0)
+    compat_resource (>= 0.0.0)
   ark (1.1.0)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  build-essential (4.0.0)
-    mingw (>= 0.0.0)
+  build-essential (6.0.0)
+    compat_resource (>= 12.10)
+    mingw (>= 1.1)
     seven_zip (>= 0.0.0)
   chef_handler (1.4.0)
-  compat_resource (12.10.4)
+  compat_resource (12.10.6)
   dmg (2.4.0)
-  env_platform (0.1.4)
+  env_platform (0.1.0)
     platform_apache (>= 0.0.0)
     platform_jenkins (>= 0.0.0)
     platform_qemu (>= 0.0.0)
@@ -37,25 +27,25 @@ GRAPH
     dmg (>= 0.0.0)
     windows (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  mingw (1.0.0)
+  mingw (1.2.0)
     compat_resource (>= 0.0.0)
     seven_zip (>= 0.0.0)
-  ohai (4.1.0)
-    compat_resource (>= 12.9.0)
-  platform_apache (0.1.8)
+  ohai (4.1.1)
+    compat_resource (>= 12.10)
+  platform_apache (0.1.1)
     apache2 (>= 0.0.0)
-  platform_base (0.1.3)
+  platform_base (0.1.0)
     apt (>= 0.0.0)
     git (>= 0.0.0)
     ohai (>= 0.0.0)
-  platform_jenkins (0.2.4)
+  platform_jenkins (0.1.0)
     ark (>= 0.0.0)
     platform_base (>= 0.0.0)
-  platform_qemu (0.1.8)
+  platform_qemu (0.1.0)
   seven_zip (2.0.1)
     windows (>= 1.2.2)
-  windows (1.42.0)
+  windows (1.43.0)
     chef_handler (>= 0.0.0)
-  yum (3.10.0)
+  yum (3.11.0)
   yum-epel (0.7.0)
     yum (>= 3.6.3)
