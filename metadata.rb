@@ -4,7 +4,7 @@ maintainer_email 'jakub.blaszczyk@sap.com'
 license 'all_rights'
 description 'Installs/Configures chef-env_platform'
 long_description 'Installs/Configures chef-env_platform'
-version '0.1.8'
+version '0.1.9'
 
 depends 'platform_apache'
 depends 'platform_jenkins'
