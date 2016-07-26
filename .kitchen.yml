@@ -41,6 +41,9 @@ suites:
     driver:
       network:
         - [ 'private_network', { ip: '192.168.24.210' } ]
+      customize:
+        memory: 8192
+        cpus: 4
   - name: raspberry
     run_list:
       - recipe[env_platform::raspberry]
