@@ -1,7 +1,7 @@
 # Apache
 force_override[:platform_apache][:port] = 4280
 
-#Jenkins_master
+# Jenkins_master
 force_override[:platform_jenkins][:apache][:url] = 'apache.pitux.ovh'
 force_override[:platform_jenkins][:apache][:port] = '80'
 force_override[:platform_jenkins][:apache][:full_url] = 'http://apache.pitux.ovh:80'
