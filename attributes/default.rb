@@ -68,5 +68,7 @@ force_override[:platform_jenkins][:slave][:master_url] = 'http://jenkins.pitux.o
 force_override[:platform_jenkins][:slave][:swarm_base_url] = 'http://apache.pitux.ovh/data/jenkins/bin'
 force_override[:platform_jenkins][:slave][:name] = 'vm_slave'
 # Qemu
-force_override[:platform_qemu][:users] = 'jenkins'
+force_override[:platform_qemu][:user] = 'jenkins'
 force_override[:platform_qemu][:home] = '/var/lib/jenkins'
+force_override[:platform_qemu][:group_users] = %w(vagrant jenkins)
+
