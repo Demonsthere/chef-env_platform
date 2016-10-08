@@ -9,10 +9,14 @@ driver:
 provisioner:
   name: chef_zero
 
+transport:
+  connection_retries: '10'
+  connection_retry_sleep: '10'
+
 platforms:
   - name: debian8_local
     driver:
-        box: debian8_local
+      box: debian8_local
 
 suites:
   - name: apache
