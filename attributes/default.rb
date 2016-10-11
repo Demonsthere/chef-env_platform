@@ -67,6 +67,7 @@ force_override[:platform_jenkins][:master][:plugin_list] = [
 force_override[:platform_jenkins][:slave][:master_url] = 'http://jenkins.pitux.ovh:9080'
 force_override[:platform_jenkins][:slave][:swarm_base_url] = 'http://apache.pitux.ovh/data/jenkins/bin'
 force_override[:platform_jenkins][:slave][:name] = 'vm_slave'
+force_override[:platform_jenkins][:slave][:labels] = 'swarm docker qemu'
 # Qemu
 force_override[:platform_qemu][:user] = 'jenkins'
 force_override[:platform_qemu][:home] = '/var/lib/jenkins'
