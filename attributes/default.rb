@@ -63,13 +63,17 @@ force_override[:platform_jenkins][:master][:plugin_list] = [
   ['ws-cleanup', '0.25'],
   ['xunit', '1.93']
 ]
+
 # Jenkins slave
 force_override[:platform_jenkins][:slave][:master_url] = 'http://jenkins.pitux.ovh:9080'
 force_override[:platform_jenkins][:slave][:swarm_base_url] = 'http://apache.pitux.ovh/data/jenkins/bin'
 force_override[:platform_jenkins][:slave][:name] = 'vm_slave'
 force_override[:platform_jenkins][:slave][:labels] = 'swarm docker qemu'
+
 # Qemu
 force_override[:platform_qemu][:user] = 'jenkins'
 force_override[:platform_qemu][:home] = '/var/lib/jenkins'
 force_override[:platform_qemu][:group_users] = %w(vagrant jenkins)
 
+# Base
+force_override[:platform_base][:sources_set] = false
